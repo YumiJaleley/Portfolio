@@ -1,0 +1,34 @@
+</main>
+<footer>
+    <ul>
+        <li><a href="https://www.instagram.com/yumi_jaleley/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.artstation.com/yumi_draws_for_you" target="_blank">ArtStation</a></li>
+        <li><a href="https://www.youtube.com/@sofiasorace9467">YouTube</a></li>
+    </ul>
+    <ul>
+        <li><a href="/bio">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <span class="copyright">Copyright &copy; {{ now.Year }} Sofia Sorace. All rights reserved</span>
+</footer>
+
+<div id="zoomed-in-image" class="hidden" onclick="unzoom()">
+    <img src="#" />
+</div>
+
+</body>
+
+<script>
+    const zoomedImageDiv = document.getElementById('zoomed-in-image')
+    const zoomedImage = zoomedImageDiv.getElementsByTagName('img')[0]
+    function zoom(id) {
+        const image = document.getElementById(id)
+        zoomedImage.src = image.src
+        zoomedImageDiv.classList.remove('hidden')
+    }
+    function unzoom() {
+        zoomedImageDiv.classList.add('hidden')
+    }
+</script>
+
+</html>
