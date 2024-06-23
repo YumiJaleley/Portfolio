@@ -1,0 +1,5 @@
+{{ $id := md5 .Destination }}
+<img class="image" id="{{ $id }}" onclick="zoom('{{ $id }}');" src="{{ .Destination | safeURL }}"
+  {{- with .Text }} alt="{{ . }}"{{ end -}}
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+>

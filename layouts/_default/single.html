@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+<section id="{{ .Title }}" class="single">
+<h1>{{ .Title }}</h1>
+{{ partial "links" .Params.links }}
+{{ if .Params.youtube }}
+{{ partial "youtube" .Params.youtube }}
+{{ end }}
+{{ if .Params.image }}
+<div class="center">
+{{ partial "image" (dict
+    "Destination" .Params.image
+    "Text" .Title
+    "Title" .Title
+)}}
+</div>
+{{ end }}
+{{ .Content }}
+</section>
+{{ partial "footer.html" . }}

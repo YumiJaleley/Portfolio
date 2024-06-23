@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+
+{{ .Content -}}
+
+{{ range .Sections }}
+<section class="list" id="{{ .Title }}">
+<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+<div class="list">
+{{ range .Pages }}
+{{ .Render "li" }}
+{{ end }}
+</div>
+</section>
+{{ end }}
+
+{{ partial "footer.html" . }}

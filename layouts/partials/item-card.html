@@ -1,0 +1,18 @@
+<div class="item-card">
+<div class="header">
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    {{ partial "tags" .Params.tags }}
+</div>
+{{ if .Params.youtube }}
+{{ partial "youtube" .Params.youtube }}
+{{ end }}
+{{ if .Params.image }}
+{{ partial "image" (dict
+    "Destination" .Params.image
+    "Text" .Title
+    "Title" .Title
+)}}
+{{ end }}
+<p>{{ .Summary }}</p>
+{{ partial "links" .Params.links }}
+</div>
