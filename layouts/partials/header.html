@@ -16,7 +16,7 @@
 
 <header>
     {{ if .Parent }}
-    <a class="back-button" href="{{ .Parent.Permalink }}">
+    <a class="back-button" href="{{ .Parent.RelPermalink }}">
         ←
         {{ if .Parent.IsHome }}
         Home
