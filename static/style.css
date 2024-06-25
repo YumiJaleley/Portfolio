@@ -1,7 +1,7 @@
 /* Theme */
 :root {
-    --bg: #050505;
-    --fg: #ccc;
+    --bg: #777777;
+    --fg: #c7c7c7;
     --bg1: #0b0f10;
     --high: skyblue;
     --anim: 0.2s;
@@ -12,7 +12,8 @@
 /* Global elements */
 body {
     font-family: "DM Sans", sans-serif;
-    background: var(--bg);
+    background: top no-repeat url("/banner2.png") var(--bg);
+    background-size: 100%;
     color: var(--fg);
     display: flex;
     flex-direction: column;
