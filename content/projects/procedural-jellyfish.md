@@ -27,10 +27,10 @@ By using entirely procedural content generation, this program will be optimized 
 - Environment & lighting design.
 - 3D creature design.
 
-### The 3 vertex displacement movements: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3D models Concept art:
-<img src="img/Jellyfish/allmovements.gif" width="600" height="340" />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="img/Jellyfish/Jellyfish_Diagram.PNG" width="550" height="340" />
+{{<rowgap>}}
+{{<image src="Jellyfish/allmovements.gif" height="350" caption="The 3 vertex displacement movements">}}
+{{<image src="Jellyfish/Jellyfish_Diagram.PNG" height="350" caption="3D models concept art">}}
+{{</rowgap>}}
 
 <br/><br/>
 
@@ -43,18 +43,13 @@ All material parameters are customisable by the player, including colour, animat
 - The camouflage material  uses a 
 black to white gradient multiplied by noise, animated to periodically become transparent. The base colour is also animated to change between 3 colours. 
 
-
-### Regular &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Chrome &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Rock
-<img src="img/Jellyfish/j_regular.png" width="350" height="350" />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="img/Jellyfish/j_chrome.png" width="350" height="350" />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="img/Jellyfish/j_rock.png" width="350" height="350" />
-
-### Camouflage &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gif of camouflage material:
-<img src="img/Jellyfish/j_camo.png" width="350" height="350" />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="img/Jellyfish/camo_gif.gif" width="670" height="350" />
+{{<rowgap>}}
+{{<image src="Jellyfish/j_regular.png" height="350" caption="Regular">}}
+{{<image src="Jellyfish/j_chrome.png" height="350" caption="Chrome">}}
+{{<image src="Jellyfish/j_rock.png" height="350" caption="Rock">}}
+{{<image src="Jellyfish/j_camo.png" height="350" caption="Camouflage">}}
+{{<image src="Jellyfish/camo_gif.gif" height="350" caption="Gif of camouflage material">}}
+{{</rowgap>}}
 
 <br/><br/>
 
@@ -66,21 +61,28 @@ I created 3 different movement for players to select, using sine equations and v
 - The “Twist” movement starts with the drift nodes, but adds a linear fall of sine equation and rotation nodes, giving it its twisting motion.
 - The final “Bounce” movement uses an absolute wave to create a propelling motion. I then used a tapering function to remove an artefact problem, as well as removing unwanted harshness from the absolute values.
 
-### Asymetrical sine wave: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sine nodes producing drift: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gif of "Drift" effect:
-<img src="img/Jellyfish/asymetrical.png" width="320" height="225"/>
-<img src="img/Jellyfish/nodes_drift.png" width="590" height="225"/>
-<img src="img/Jellyfish/gif_drift.gif" width="270" height="225"/>
+{{<row>}}
+{{<image src="Jellyfish/asymetrical.png" height="225" caption="Asymetrical sine wave">}}
+{{<image src="Jellyfish/nodes_drift.PNG" height="225" caption="Sine nodes producing drift">}}
+{{<image src="Jellyfish/gif_drift.gif" height="225" caption="Gif of 'Drift' effect">}}
+{{</row>}}
 
-### Reverse linear fall off sine wave: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Rotation nodes: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gif of "Twist" effect:
-<img src="img/Jellyfish/linearfalloff.png" width="320" height="225"/>
-<img src="img/Jellyfish/nodes_twist.png" width="590" height="225"/>
-<img src="img/Jellyfish/gif_twist.gif" width="270" height="225"/>
+<br>
 
-### Absolute & tapering sine waves: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sine nodes producing bounce: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gif of "Bounce" effect:
-<img src="img/Jellyfish/absolute.png" width="160" height="225"/>
-<img src="img/Jellyfish/tapering.png" width="160" height="225"/>
-<img src="img/Jellyfish/nodes_bounce.png" width="590" height="225"/>
-<img src="img/Jellyfish/gif_bounce.gif" width="270" height="225"/>
+{{<row>}}
+{{<image src="Jellyfish/linearfalloff.png" height="225" caption="Reverse linear fall off sine wave">}}
+{{<image src="Jellyfish/nodes_twist2.png" height="225" caption="Rotation nodes">}}
+{{<image src="Jellyfish/gif_twist.gif" height="225" caption="Gif of 'Twist' effect">}}
+{{</row>}}
+
+<br>
+
+{{<row>}}
+{{<image src="Jellyfish/absolute.png" height="225" caption="Absolute sine wave">}}
+{{<image src="Jellyfish/tapering.png" height="225" caption="Tapering function">}}
+{{<image src="Jellyfish/nodes_bounce.png" height="225" caption="Sine nodes producing bounce">}}
+{{<image src="Jellyfish/gif_bounce.gif" height="225" caption="Gif of 'Bounce' effect">}}
+{{</row>}}
 
 <br/><br/>
 
@@ -88,15 +90,17 @@ I created 3 different movement for players to select, using sine equations and v
 
 By using GPU profiling, I discovered that my sine equations were slightly affecting performance. I was able to successfully optimise all of my movement blueprints by drastically simplifying each equation. Although marginally increase frame rate in this case, this good practice would be essential to maintain a larger games' performance at optimal levels.
 
-### Example of movement equation before optimization: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GPU profiling before:
-<img src="img/Jellyfish/opt_before.png" width="600" height="225"/>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-<img src="img/Jellyfish/gpu_bad.png" width="450" height="225"/>
+{{<rowgap>}}
+{{<image src="Jellyfish/opt_before.png" height="230" caption="Example of movement equation before optimization">}}
+{{<image src="Jellyfish/gpu_bad.png" height="225" caption="GPU profiling before">}}
+{{</rowgap>}}
 
-### Example of movement equation after optimization: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GPU profiling after:
-<img src="img/Jellyfish/opt_after.png" width="600" height="225"/>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-<img src="img/Jellyfish/gpu_good.png" width="450" height="225"/>
+<br/>
+
+{{<rowgap>}}
+{{<image src="Jellyfish/opt_after.png" height="225" caption="Example of movement equation after optimization">}}
+{{<image src="Jellyfish/gpu_good.png" height="225" caption="GPU profiling after">}}
+{{</rowgap>}}
 
 <br/><br/>
 
@@ -106,13 +110,17 @@ For the sliders, I created my own work method to maximise code efficiency: by se
 
 For the environment, I created a PCG sand texture and a Post Processing volume to create a underwater atmosphere with a disappearing render distance. I also added a daytime/night-time option.
 
-### Example of slider code in a widget: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Example of 3D models reference in a widget:
-<img src="img/Jellyfish/ui_objectref.png" width="580" height="325"/>
-<img src="img/Jellyfish/ui_slidercode.png" width="580" height="325"/>
+{{<rowgap>}}
+{{<image src="Jellyfish/ui_objectref.png" height="325" caption="Example of slider code in a widget">}}
+{{<image src="Jellyfish/ui_slidercode.png" height="325" caption="Example of 3D models reference in a widget">}}
+{{</rowgap>}}
 
-### Gif of sliders being used: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Scene with light-off button active:
-<img src="img/Jellyfish/ui_gif.gif" width="580" height="325"/>
-<img src="img/Jellyfish/ui_night.png" width="600" height="325"/>
+<br/>
+
+{{<row>}}
+{{<image src="Jellyfish/ui_gif.gif" height="315" caption="Gif of sliders being used">}}
+{{<image src="Jellyfish/ui_night.png" height="315" caption="Scene with light-off button active">}}
+{{</rowgap>}}
 
 <br/><br/>
 
