@@ -32,6 +32,7 @@ a:hover {
 
 header h1 {
     text-align: center;
+    margin: 2em
 }
 
 h1, h2, h3, h4 {
@@ -137,6 +138,8 @@ div.tags {
     align-items: start;
     font-weight: bold;
     margin: 1em;
+    gap: 0.5em;
+    flex-wrap: wrap;
 }
 
 div.tags div.tag {
@@ -178,4 +181,18 @@ div#zoomed-in-image.hidden {
 div#zoomed-in-image img {
     max-width: 80vw;
     max-height: 80vh;
+}
+div.captionedimage{
+    display: flex;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+    font-size: 18.72px;
+}
+div.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+div.row.gap{
+    gap: 1em;
 }
