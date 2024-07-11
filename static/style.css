@@ -196,3 +196,8 @@ div.row{
 div.row.gap{
     gap: 1em;
 }
+
+model-viewer{
+    width:700px;
+    height:700px;
+}
