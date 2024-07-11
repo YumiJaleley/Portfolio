@@ -19,6 +19,11 @@ links:
 I in the process of updating this project. The improved 'work in progress' images will be featured next to the original ones. <br/>
 Besides improved the topology & UV map, the update will feature procedurally generated hair materials & animations, as well as differing 3D model textures, based on the player's choice of race (Elf, water elemental or fire elemental).
 
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+### WIP Update - New Zia 3D model (Interactable):
+<model-viewer alt="this is Zia" src="/img/zia/revamp_textures.glb" ar environment-image="/img/zia/texture_update_normal.png" poster="/img/zia/texture_update_normal.png" shadow-intensity="0" camera-controls touch-action="pan-y"></model-viewer>
+
 <br/><br/>
 
 # Zia
@@ -37,14 +42,9 @@ Zia is the main NPC of an open world adventure game. She resides in a single loc
 <br/>
 
 {{<row>}}
-{{<image src="zia/70.jpg" height="600" caption="3D render still 1">}}
-{{<image src="zia/Still_5.jpg" height="600" caption="3D render still 2">}}
+{{<image src="zia/70.jpg" height="500" caption="Older version - 3D model still 1">}}
+{{<image src="zia/Still_5.jpg" height="500" caption="Older version - 3D model still 2">}}
 {{</row>}}
-
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
-
-<model-viewer alt="this is Zia" src="img/zia/revamp_textures.glb" ar environment-image="zia/ca_zia.png" poster="zia/old_front.jpg" shadow-intensity="0" camera-controls touch-action="pan-y"></model-viewer>
-
 
 <br/><br/>
 
@@ -97,7 +97,7 @@ WIP update: The UV mapps were greatly improved, taking the least amount of space
 
 {{<row>}}
 {{<image src="zia/texture_update_normal.png" height="375" caption="WIP Update - Zia elf texutre">}}
-{{<image src="zia/texture_update_water.png" height="375" caption="WIP Update - Zia water elemental">}}
+{{<image src="zia/texture_update_water.png" height="375" caption="WIP Update - Zia water elemental texture">}}
 {{<image src="zia/texture_update_fire.png" height="375" caption="WIP Update - Zia fire elemental texture">}}
 {{</row>}}
 
