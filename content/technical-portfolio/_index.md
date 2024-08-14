@@ -1,5 +1,5 @@
 ---
-title: Gallery
+title: Art Projects
 weight: 2
 ---
 

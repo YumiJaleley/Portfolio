@@ -1,6 +1,6 @@
 ---
 title: MovingCountries
-youtube: fYaEYadzhTg&t=1s
+youtube: fYaEYadzhTg
 weight: 3
 tags:
   - UI Programming
@@ -10,7 +10,7 @@ summary: Multiple ending, silent narrative video game. Made using 2D animation i
 
 links:
     - name: Gameplay video
-      url: https://www.youtube.com/watch?v=fYaEYadzhTg&t=1s
+      url: https://www.youtube.com/watch?v=fYaEYadzhTg
     - name: Play the game
       url: https://yumi-jaleley.itch.io/moving-countries
 ---
