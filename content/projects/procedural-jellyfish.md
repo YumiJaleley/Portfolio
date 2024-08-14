@@ -1,6 +1,6 @@
 ---
 title: Procedural Jellyfish
-youtube: cXyxCfFtzfU
+youtube: s03iVL0zItw
 weight: 1
 tags:
   - Technical Art
@@ -11,7 +11,7 @@ summary: Detailed jellyfish customisation game, made using only procedural conte
 
 links:
     - name: Gameplay video
-      url: https://www.youtube.com/watch?v=cXyxCfFtzfU
+      url: https://www.youtube.com/watch?v=s03iVL0zItw
 ---
 
 # Procedural Content Generation - Jellyfish Customisation
