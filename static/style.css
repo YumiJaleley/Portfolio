@@ -26,8 +26,12 @@ a {
     color: var(--fg);
     transition: color var(--anim);
 }
+
 a:hover {
     color: var(--high);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+
 }
 
 header h1 {
@@ -40,8 +44,20 @@ h1, h2, h3, h4 {
     font-weight: normal;
 }
 
-h1 a, h2 a, h3 a, h4 a {
+h1 a{
     text-decoration: none;
+}
+
+h2 a, h3 a, h4 a {
+    display: inline-block;
+  padding: 10px 20px;
+  background-color: #5e8877; /* Background color */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+
 }
 
 div.center {
@@ -140,6 +156,7 @@ div.tags {
     margin: 1em;
     gap: 0.5em;
     flex-wrap: wrap;
+    
 }
 
 div.tags div.tag {
