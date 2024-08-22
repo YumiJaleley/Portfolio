@@ -4,6 +4,7 @@ youtube: H8qoyaEmMBg
 weight: 5
 tags:
   - Technical Art Mobile Games
+  - Level Design
 
 summary: This spy simulation mobile game is built to maximise monetisation and longevity through microtransactions and captivating gameplay.
 
