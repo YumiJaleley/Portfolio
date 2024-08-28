@@ -1,7 +1,7 @@
 ---
 title: Little Fred
 youtube: AA0VN84vcVY
-weight: 2
+weight: 6
 tags:
   - Graphic Design
   - Motion Graphics
