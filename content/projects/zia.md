@@ -1,7 +1,7 @@
 ---
 title: 'Video game character "Zia"'
 youtube: lJHgmDBUM6M
-weight: 4
+weight: 3
 tags:
     - Technical Art
     - 3D/2D Art

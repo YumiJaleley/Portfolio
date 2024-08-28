@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Commissions
 image: /img/misc/gif4.gif
-weight: 3
+weight: 7
 tags:
   - Graphic Design
   - Motion Graphics
