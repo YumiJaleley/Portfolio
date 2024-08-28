@@ -6,6 +6,7 @@ tags:
   - UI Programming
   - Programming
   - Technical Art Mobile Games
+  - 3D/2D Art
 
 summary: Multiple ending, silent narrative video game. Made using 2D animation in photoshop and C# code in Unity.
 
