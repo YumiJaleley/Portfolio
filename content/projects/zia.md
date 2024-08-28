@@ -4,6 +4,7 @@ youtube: lJHgmDBUM6M
 weight: 4
 tags:
     - Technical Art
+    - 3D/2D Art
     - 3D Modelling
     - Character Art
 
