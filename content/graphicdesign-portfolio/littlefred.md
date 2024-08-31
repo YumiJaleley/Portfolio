@@ -5,7 +5,7 @@ weight: 6
 tags:
   - Graphic Design
   - Motion Graphics
-  - Level Design
+  - Game Design
   - 3D/2D Art
 
 summary: Little Fred is a Blender animation demonstrating a Demo for a silent narrative game, using shape language, colour theory and sound design to present charming character personalities and environments.

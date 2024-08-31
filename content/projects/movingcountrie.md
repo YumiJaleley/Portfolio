@@ -1,12 +1,13 @@
 ---
 title: MovingCountries
 youtube: fYaEYadzhTg
-weight: 4
+weight: 5
 tags:
   - UI Programming
   - Programming
   - Technical Art Mobile Games
   - 3D/2D Art
+  - Game Design
 
 summary: Multiple ending, silent narrative video game. Made using 2D animation in photoshop and C# code in Unity.
 

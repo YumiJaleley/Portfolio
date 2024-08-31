@@ -1,10 +1,10 @@
 ---
 title: The Covert Heist Agency 
 youtube: H8qoyaEmMBg
-weight: 5
+weight: 4
 tags:
   - Technical Art Mobile Games
-  - Level Design
+  - Game Design
 
 summary: This spy simulation mobile game is built to maximise monetisation and longevity through microtransactions and captivating gameplay.
 
