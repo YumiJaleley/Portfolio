@@ -1,5 +1,5 @@
 ---
-title: 'Video game character "Zia"'
+title: Click to see - Zia
 youtube: lJHgmDBUM6M
 weight: 3
 tags:

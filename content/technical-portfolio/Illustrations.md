@@ -1,5 +1,5 @@
 ---
-title: General Illustrations
+title: Click to see - General Illustrations
 image: /img/illustrations/finalawd.png
 tags:
   - Character Art

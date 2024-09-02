@@ -1,5 +1,5 @@
 ---
-title: Fireboi Escapes The Lab
+title: Click to see - Fireboi Escapes The Lab
 youtube: Jt1GzJWj9wA
 weight: 2
 tags:

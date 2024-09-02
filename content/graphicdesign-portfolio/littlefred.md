@@ -1,5 +1,5 @@
 ---
-title: Little Fred
+title: Click to see - Little Fred
 youtube: AA0VN84vcVY
 weight: 6
 tags:
