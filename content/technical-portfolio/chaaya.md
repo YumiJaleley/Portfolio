@@ -1,5 +1,5 @@
 ---
-title: Chaaya
+title: Click to see - Chaaya
 image: /img/gallery/chaaya_FINAL12.png
 tags:
   - Character Art
