@@ -1,5 +1,5 @@
 ---
-title: Click to see - Harpalium Initiative
+title: Harpalium Initiative - Internship
 youtube: b1n-cOYIC_c
 weight: 5
 tags:

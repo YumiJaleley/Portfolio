@@ -1,5 +1,5 @@
 ---
-title: Click to see - Procedural Jellyfish
+title: Procedural Jellyfish
 youtube: s03iVL0zItw
 weight: 1
 tags:

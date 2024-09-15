@@ -1,5 +1,5 @@
 ---
-title: Click to see - Fireboi Escapes The Lab
+title: Fireboi Escapes The Lab - Unity C# Exploration
 youtube: Jt1GzJWj9wA
 weight: 2
 tags:

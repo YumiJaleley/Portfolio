@@ -1,7 +1,6 @@
 <div class="item-card">
 <div class="header">
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-    {{ partial "tags" .Params.tags }}
 </div>
 {{ if .Params.youtube }}
 {{ partial "youtube" .Params.youtube }}
@@ -15,4 +14,5 @@
 {{ end }}
 <p>{{ .Summary }}</p>
 {{ partial "links" .Params.links }}
+{{ partial "tags" .Params.tags }}
 </div>

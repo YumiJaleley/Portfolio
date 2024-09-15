@@ -1,5 +1,5 @@
 ---
-title: Click to see - Little Fred
+title: Little Fred - 3D Visual Design
 youtube: AA0VN84vcVY
 weight: 6
 tags:
