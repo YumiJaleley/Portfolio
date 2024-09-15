@@ -1,18 +1,22 @@
 <div class="item-card">
-<div class="header">
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-</div>
-{{ if .Params.youtube }}
-{{ partial "youtube" .Params.youtube }}
-{{ end }}
-{{ if .Params.image }}
-{{ partial "image" (dict
-    "Destination" .Params.image
-    "Text" .Title
-    "Title" .Title
-)}}
-{{ end }}
-<p>{{ .Summary }}</p>
-{{ partial "links" .Params.links }}
-{{ partial "tags" .Params.tags }}
+    <a class="see-more" href="{{ .RelPermalink }}">Click to see more</a>
+    {{ if .Params.youtube }}
+    {{ partial "youtube" .Params.youtube }}
+    {{ end }}
+    {{ if .Params.image }}
+    {{ partial "image" (dict
+        "Destination" .Params.image
+        "Text" .Title
+        "Title" .Title
+    )}}
+    {{ end }}
+    <div class="content">
+        <p>
+            {{ .Summary }}
+            <a class="see-more" href="{{ .RelPermalink }}">See More</a>
+        </p>
+        {{ partial "links" .Params.links }}
+        {{ partial "tags" .Params.tags }}
+    </div>
 </div>
