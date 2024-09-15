@@ -1,5 +1,5 @@
 ---
-title: Click to see - Miscellaneous Commissions
+title: Miscellaneous Commissions
 image: /img/misc/gif4.gif
 weight: 7
 tags:

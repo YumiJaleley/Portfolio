@@ -1,5 +1,5 @@
 ---
-title: Click to see - Chaaya
+title: Chaaya - Character Concept Design
 image: /img/gallery/chaaya_FINAL12.png
 tags:
   - Character Art
