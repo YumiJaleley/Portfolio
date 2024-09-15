@@ -24,14 +24,11 @@ body {
 
 a {
     color: var(--fg);
-    transition: color var(--anim);
+    transition: color var(--anim), box-shadow var(--anim);
 }
 
 a:hover {
     color: var(--high);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
-    transform: translateY(-2px); /* Slight lift on hover */
-
 }
 
 header h1 {
@@ -50,14 +47,9 @@ h1 a{
 
 h2 a, h3 a, h4 a {
     display: inline-block;
-  padding: 10px 20px;
-  background-color: #5e8877; /* Background color */
-  color: white; /* Text color */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  cursor: pointer;
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
-
+    color: white;
+    cursor: pointer;
+    transition: all var(--anim) ease;
 }
 
 div.center {
@@ -119,30 +111,52 @@ div.item-card {
     flex-direction: column;
     align-items: stretch;
 }
-div.item-card > * {
-    width: 100%;
-}
+
 div.item-card h2 {
     text-align: center;
-    margin-top: 1em;
+    margin: 0;
 }
-div.item-card p {
-    padding: 1em 2em;
+div.item-card h2 a {
+    width: 100%;
     box-sizing: border-box;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+div.item-card a.see-more {
+    text-align: center;
+    color: var(--high);
+    padding-bottom: 1em;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+div.item-card div.content {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 1em;
+}
+
+div.item-card p {
+    margin: 0;
+}
+
+div.item-card p a.see-more {
+    text-decoration: underline;
 }
 
 div.item-card div.links {
-    /* padding: 1em 2em; */
-    padding: 2em;
-    padding-top: 0;
-    box-sizing: border-box;
+    justify-content: center;
 }
 
 /* Single Pages */
 section.single h1 {
     margin-bottom: 0;
 }
-section.single div.links {
+
+/* Links */
+div.links {
     display: flex;
     gap: 1em;
     margin-bottom: 1em;
@@ -153,7 +167,6 @@ div.tags {
     display: flex;
     align-items: start;
     font-weight: bold;
-    margin: 1em;
     gap: 0.5em;
     flex-wrap: wrap;
     
