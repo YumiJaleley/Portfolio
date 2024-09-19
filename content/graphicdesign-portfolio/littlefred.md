@@ -1,7 +1,7 @@
 ---
 title: Little Fred - 3D Visual Design
 youtube: AA0VN84vcVY
-weight: 6
+weight: 7
 tags:
   - Graphic Design
   - Motion Graphics
