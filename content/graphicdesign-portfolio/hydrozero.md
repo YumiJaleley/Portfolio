@@ -1,7 +1,7 @@
 ---
 title: HydroZero - Product Design
 image: /img/hydrozero/final_2.8.jpg
-weight: 6
+weight: 5
 tags:
   - Graphic Design
   - Motion Graphics
