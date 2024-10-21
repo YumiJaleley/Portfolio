@@ -11,7 +11,7 @@ summary: HydroZero is a personal project that investigates innovative product an
 links:
 ---
 
-HydroZero is a personal project that investigates innovative product and package design, using audience & competitor research, to create a fully sustainable skin care product with 3D models, dieline templates and more.
+HydroZero is a personal project that investigates innovative product and package design, using audience & competitor research to create a fully sustainable skin care product with 3D models, dieline templates and more.
 
 ### Skills Gained:
 - Creating brand identity with a logo, colour scheme and more.
