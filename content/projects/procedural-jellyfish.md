@@ -19,14 +19,14 @@ links:
 
 # Procedural Content Generation - Jellyfish Customisation
 
-This final MA university project is a jellyfish customisation program using only procedural content generation (PCG) in Unreal Engine 5.This program allows players to alter detailed attributes of their jellyfish’s textures and movement using UI sliders. 
-By using entirely procedural content generation, this program will be optimized for minimal disk space.
+This final MA university project is a jellyfish customisation program, made using only procedural content generation (PCG) in Unreal Engine 5. This program allows players to alter detailed attributes of their jellyfish’s textures and movements using UI sliders. 
+By using entirely procedural content generation, this program is optimised for minimal disk space.
 
 ### Skills Gained:
 - UI sliders & widgets in UE5.
 - PCG texture creation.
-- Complex vertex dissplacement animation.
-- Performance optimisation.
+- Complex vertex displacement animation.
+- Performance optimization.
 - Environment & lighting design.
 - 3D creature design.
 
@@ -58,11 +58,11 @@ black to white gradient multiplied by noise, animated to periodically become tra
 
 # Movement
 
-I created 3 different movement for players to select, using sine equations and vertex displacement for fluid, infinitely customisable animations. The Bounce equation was created by replicating a sine wave from Alexander Hoover's dissertaion. The rest, I discovered myself through observation and experimentation.
+I created 3 different movements for players to select, using sine equations and vertex displacement for fluid, infinitely customisable animations. The Bounce equation was created by replicating a sine wave from Alexander Hoover's dissertation. The rest, I discovered myself through observation and experimentation.
 
 - The “Drift” movement uses an asymmetric sine equation to give the appearance of drifting with the water.
-- The “Twist” movement starts with the drift nodes, but adds a linear fall of sine equation and rotation nodes, giving it its twisting motion.
-- The final “Bounce” movement uses an absolute wave to create a propelling motion. I then used a tapering function to remove an artefact problem, as well as removing unwanted harshness from the absolute values.
+- The “Twist” movement starts with the "Drift" nodes, but adds a linear fall of sine equation and rotation nodes, giving it its twisting motion.
+- The final “Bounce” movement uses an absolute wave to create a propelling motion. I then used a tapering function to remove an artefact, as well as removing unwanted harshness from the absolute values.
 
 {{<row>}}
 {{<image src="Jellyfish/asymetrical.png" height="225" caption="Asymetrical sine wave">}}
@@ -91,7 +91,7 @@ I created 3 different movement for players to select, using sine equations and v
 
 # Profiling & Optimization
 
-By using GPU profiling, I discovered that my sine equations were slightly affecting performance. I was able to successfully optimise all of my movement blueprints by drastically simplifying each equation. Although marginally increase frame rate in this case, this good practice would be essential to maintain a larger games' performance at optimal levels.
+By using GPU profiling, I discovered that my sine equations were slightly affecting performance. I was able to successfully optimise all of my movement blueprints by drastically simplifying each equation. Although the unoptimized equations only marginally increased frame rate, this good practice would be essential to maintain a larger games' performance at optimal levels.
 
 {{<rowgap>}}
 {{<image src="Jellyfish/opt_before.png" height="230" caption="Example of movement equation before optimization">}}
@@ -107,18 +107,20 @@ By using GPU profiling, I discovered that my sine equations were slightly affect
 
 <br/><br/>
 
-# Environment & UI Sliders
+# UI Sliders
 
 For the sliders, I created my own work method to maximise code efficiency: by setting up the slider code within each corresponding widget & referencing the 3D models using an array. The resulting code is very clean, organised and efficient.
-
-For the environment, I created a PCG sand texture and a Post Processing volume to create a underwater atmosphere with a disappearing render distance. I also added a daytime/night-time option.
 
 {{<rowgap>}}
 {{<image src="Jellyfish/ui_objectref.png" height="325" caption="Example of slider code in a widget">}}
 {{<image src="Jellyfish/ui_slidercode.png" height="325" caption="Example of 3D models reference in a widget">}}
 {{</rowgap>}}
 
-<br/>
+# Environment
+
+For the environment, I created a PCG sand texture and a Post Processing volume to create a underwater atmosphere with a disappearing render distance. I also added a daytime/night-time switch and god rays. The god-rays were made using simple geometric shapes & a PCG material. I created different instances with out of sync sine values to create a scattering-light effect. This cheap, visually effective method avoids using Unreal's "expensive" lighting effects. 
+
+I added an option that allows players to add their customised jellyfish into the background, working much like a particle system. To do this, I used an array and velocity script. The submitted jellyfish is cloned, with the clone containing a random velocity that changes direction if colliding with an invisible wall, to avoid jellyfish leaving the visible area. The clone is also added to an array list that deletes that oldest list item once 10 items have been added, to avoid overcrowding. This "particle" system creates a neat, easily customisable method to crowd an environment and for the player to admire their creation. 
 
 {{<row>}}
 {{<image src="Jellyfish/ui_gif.gif" height="315" caption="Gif of sliders being used">}}
