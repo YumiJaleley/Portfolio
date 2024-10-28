@@ -130,14 +130,16 @@ Previously, all sliders were copy pasted for every jellyfish model in the game (
 {{<image src="Jellyfish/portfolio_all_array_set_up.png" height="337" caption="List array of jellyfish models & textures">}}
 {{<image src="Jellyfish/portfolio_button_selection.png" height="337" caption="Jellyfish model button selection code">}}
 {{</rowgap>}}
+<br/><br/>
 
 # Environment
 
-For the environment, I created a PCG sand texture and a Post Processing volume to create a underwater atmosphere with a disappearing render distance. I also added a daytime/night-time switch and god rays. The god-rays were made using simple geometric shapes & a PCG material. I created different instances with out of sync sine values to create a scattering-light effect. This cheap, visually effective method avoids using Unreal's "expensive" lighting effects. 
+For the environment, I created a PCG sand texture and a Post Processing volume to create an underwater atmosphere with a disappearing render distance. I also added a daytime/night-time switch and god rays. The god-rays were made using simple geometric shapes & a PCG material. I created different instances with out of sync sine values to create a seemingly random scattering-light effect. This cheap, visually effective method avoids using Unreal's 'expensive' environment light mixture effects. 
 
 {{<row>}}
-{{<image src="Jellyfish/ui_gif.gif" height="315" caption="Gif of sliders being used">}}
+{{<image src="Jellyfish/gif_sliders.gif" height="315" caption="Gif of sliders being used">}}
 {{<image src="Jellyfish/ui_night.png" height="315" caption="Scene with light-off button active">}}
+{{<image src="Jellyfish/gif_godrays.gif" height="315" caption="Gif of cheap godrays">}}
 {{</rowgap>}}
 
 <br/><br/>
@@ -149,6 +151,7 @@ Once the artist, or player, has finished customising their jellyfish, they may l
 {{<rowgap>}}
 {{<image src="Jellyfish/portfolio_equation.png" height="330" caption="Velocity calculated through the 'Euler Method' equation.">}}
 {{<image src="Jellyfish/array.png" height="330" caption="List array of all clones, maxing at 10 jellyfish">}}
+{{<image src="Jellyfish/gif_addtoocean.gif" height="330" caption="Gif of completed Jellyfish being added into the background">}}
 {{</rowgap>}}
 
 <br/><br/>
@@ -156,4 +159,5 @@ Once the artist, or player, has finished customising their jellyfish, they may l
 
 # Conclusion
 
-This lengthy project began as a computing MA final project and has since been updated numerous times as my technical art & programming skills progress. After using Unreal Engine's colourblind testing feature and adding several of my own soundtrack, my jellyfish program was completed with 4 textures, 3 movements, 65 differing sliders and 4 differing buttons with a zipped file size smaller than 100MB.
+This lengthy project began as a computing MA final project and has since been updated numerous times as my technical art & programming skills progress. <br/>
+After using Unreal Engine's colourblind testing feature and adding several of my own soundtracks, my jellyfish program was completed with 4 textures, 3 movements, 65 differing sliders and 4 differing buttons with a zipped file size smaller than 100MB.
