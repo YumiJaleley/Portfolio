@@ -19,8 +19,9 @@ links:
 
 # Procedural Content Generation - Jellyfish Customisation
 
-This personal project is a jellyfish customisation program, made using only procedural content generation (PCG) in Unreal Engine 5. This program allows players, or game artists, to alter detailed attributes of their jellyfish’s textures and movements using UI sliders. 
-By using entirely procedural content generations for textures, optimised code and an API, hundereds of textures and jellyfish models can be easily added while maintaining minimal disk space.
+In gaming, 3D character and creature models often focus on familiar archetypes like humanoids and dragons, leaving intriguing designs like jellyfish largely underrepresented. Their diverse textures and fluid, sine-wave movements make jellyfish ideal candidates for Procedural Content Generation (PCG).
+
+The initial aim of this project was to create a jellyfish customization game using UI sliders for real-time adjustments. As development progressed, the project evolved to include multiple updates that enhance technical efficiency, such as an API for streamlined asset management and an array of jellyfish clones to populate the environment. These features not only optimize performance but also enable a rich variety of jellyfish while minimizing file size and resource usage, showcasing the powerful capabilities of PCG in game development.
 
 ### Skills Gained:
 - PCG texture creation.
@@ -32,14 +33,27 @@ By using entirely procedural content generations for textures, optimised code an
 - 3D creature design.
 
 {{<rowgap>}}
-{{<image src="Jellyfish/allmovements.gif" height="350" caption="The 3 vertex displacement movements">}}
-{{<image src="Jellyfish/Jellyfish_Diagram.PNG" height="350" caption="3D models concept art">}}
+{{<image src="Jellyfish/realjf.gif" height="350" caption="The sea Nettle jellyfish">}}
+{{<image src="Jellyfish/realjf2gif.gif" height="350" caption="The portuguese man o' war jellyfish">}}
+{{<image src="Jellyfish/Jellyfish_Diagram.PNG" height="350" caption="3D models concept art inspired from the jellyfish above">}}
 {{</rowgap>}}
 
 <br/><br/>
 
 # Materials
-All material parameters are customisable by the user, including colour, animation speed, transparency & pattern manipulation.
+In developing the jellyfish textures, I focused on enhancing my expertise with material nodes (specifcially, 
+learning the 'Parallax occlusion Mapping' and 'Fresnel' nodes) and exploring advanced techniques for generating 
+unique visual effects. My objectives included creating a realistic jellyfish texture that captures its characteristic 
+transparency, along with more striking and visually appealing options designed to attract players, such as the camouflage material, 
+inspired by the mimic octopus.
+
+{{<rowgap>}}
+{{<image src="Jellyfish/moonjelly.jpg" height="300" caption="Most common jellyfish texture">}}
+{{<image src="Jellyfish/chrome.jpg" height="300" caption="Example of chrome metal">}}
+{{<image src="Jellyfish/octopus.gif" height="300" caption="The mimic octopus">}}
+{{</rowgap>}}
+
+<br/><br/>
 
 - The regular material uses a fresnel & noise node to create a realistic jellyfish appearance.
 - The chrome material uses the fresnel node to create a realistic metallic, rainbow chrome effect.
@@ -54,15 +68,18 @@ All material parameters are customisable by the user, including colour, animatio
 {{<image src="Jellyfish/camo_gif.gif" height="350" caption="Gif of camouflage material">}}
 {{</rowgap>}}
 
+With numerous unique customizable variables, such as color, animation speed, transparency, and pattern manipulation, my effective and optimised use of PCG textures allow for multiple jellyfish variations with minimal disk space usage.
+
 <br/><br/>
 
 # Movement
 
-I created 3 different movements for user to select, using sine equations and vertex displacement for fluid, infinitely customisable animations. The Bounce equation was created by replicating a sine wave from Alexander Hoover's dissertation. The rest, I discovered myself through observation and experimentation.
+Jellyfish move in flowing, sine-like motions, making vertex displacement—a branch of PCG—ideal for capturing this behaviour. 
+This technique enables organic, fluid movements while minimising disk space. Therefore, I created 3 different animations using 
+this method. <br/><br>
 
-- The “Drift” movement uses an asymmetric sine equation to give the appearance of drifting with the water.
-- The “Twist” movement starts with the "Drift" nodes, but adds a linear fall off sine equation and rotation nodes, giving it its twisting motion.
-- The final “Bounce” movement uses an absolute wave to create a propelling motion. I then used a tapering function to remove an artefact, as well as removing unwanted harshness from the absolute values.
+- The “Drift” movement aims to replicate the man o' war jellyfish. The equation uses an asymmetric sine equation to give the appearance 
+of drifting with the water.
 
 {{<row>}}
 {{<image src="Jellyfish/asymetrical.png" height="225" caption="Asymetrical sine wave">}}
@@ -72,10 +89,23 @@ I created 3 different movements for user to select, using sine equations and ver
 
 <br>
 
+- The “Twist” movement was developed through creative exploration and experimentation. Starting with the "Drift" nodes, I added a 
+linear fall off sine equation and rotation nodes, giving it its twisting motion.
+
 {{<row>}}
 {{<image src="Jellyfish/linearfalloff.png" height="225" caption="Reverse linear fall off sine wave">}}
 {{<image src="Jellyfish/nodes_twist2.png" height="225" caption="Rotation nodes">}}
 {{<image src="Jellyfish/gif_twist.gif" height="225" caption="Gif of 'Twist' effect">}}
+{{</row>}}
+
+<br>
+
+- The final “Bounce” movement aimed to replicate the sea nettle jellyfish. Starting by replicating a sine wave from Alexander 
+Hoover's dissertation, I added an absolute wave to create a propelling motion. I then used a tapering function to remove an artefact, 
+as well as removing unwanted harshness from the absolute values.
+
+{{<row>}}
+{{<image src="Jellyfish/essay.png" height="255" caption="Screenshot from Hoover's essay, showing jellyfish propultion & sine wave motion">}}
 {{</row>}}
 
 <br>
@@ -87,11 +117,23 @@ I created 3 different movements for user to select, using sine equations and ver
 {{<image src="Jellyfish/gif_bounce.gif" height="225" caption="Gif of 'Bounce' effect">}}
 {{</row>}}
 
+<br>
+
+{{<row>}}
+{{<image src="Jellyfish/allmovements.gif" height="360" caption="The final 3 vertex displacement movements">}}
+{{</row>}}
+
+By leveraging multiple sine equations and advanced mathematical methods, I created numerous animation variations 
+with customizable parameters, allowing for a multitude of unique possible outcomes.
+
 <br/><br/>
 
 # Profiling & Optimization
 
-By using GPU profiling, I discovered that my sine equations were slightly affecting performance. I was able to successfully optimise all of my movement blueprints by drastically simplifying each equation. Although the unoptimized equations only marginally increased frame rate, this good practice would be essential to maintain a larger games' performance at optimal levels.
+An experienced technical artist recommended that I improve my equations, and through GPU profiling, I found that a 
+populated scene with these equations was indeed impacting performance. By consolidating all calculations into a single sine 
+equation, I successfully optimized my movement blueprints. While the unoptimized equations had only a slight effect on frame 
+rates, this practice is crucial for maintaining sustained performance in larger-scale games.
 
 {{<rowgap>}}
 {{<image src="Jellyfish/opt_before.png" height="230" caption="Example of movement equation before optimization">}}
@@ -107,22 +149,28 @@ By using GPU profiling, I discovered that my sine equations were slightly affect
 
 <br/><br/>
 
-# UI Sliders
+# UI Sliders - What if there were 100 jellyfish models and textures?
 
-For the sliders, the user can cycle through Several widgets (UI containers) that each control a specific material and its variables. However, to avoid unnecessarily repeating code, a 'select model' widget is always present on top, containing the controls for jellyfish model selection and lighting.
+During an interview, I was challenged with a crucial question: how could my code accommodate 100 jellyfish models for an MMO open-world 
+setting? At that time, my approach relied on copy-pasting code for each jellyfish (in my case, 2 models), which was neither efficient 
+nor scalable. Therefore, I set out to completely restructure my codebase. <br/>
+
+For the sliders, users can cycle through several widgets, each controlling specific materials and their variables. Initially, I 
+repeated code for the light switch and buttons within each widget. To eliminate this redundancy, I added a separate "select model" 
+widget that remains fixed on top, consolidating all controls for jellyfish model selection and lighting. <br/>
 
 {{<rowgap>}}
 {{<image src="Jellyfish/portfolio_UI_1.png" height="330" caption="'Select Model' widget">}}
 {{<image src="Jellyfish/portfolio_exampleofwidget.png" height="330" caption="Example of material widget">}}
 {{</rowgap>}}
 
-<br/><br/>
+<br/>
 
-# UI Sliders - What if there were 100 jellyfish models and textures?
-
-As this project would most likley be used in an MMO open world setting, I addressed this critical question by completely restructuring my code, creating an API. <br/>
-
-Previously, all sliders were copy pasted for every jellyfish model in the game (in my case, 2 models). To accomodate 100 jellyfish, I used a static variable that would update to whichever jellyfish is currently being displayed. This is possible as all relevant variables share the same. All of the jellyfish models and textures are stored in a list array that an artist could comfortably edit. As my game currently uses buttons, when a jellyfish button is selected, its corresponding index is called from the list array, updating the static variable. Of course, a keyboard input or number-insert system could easily be used in its place. 
+To accomodate 100 jellyfish, I used a static variable that would update to whichever jellyfish is currently being displayed. This is 
+possible as all relevant variables share the same name. All of the jellyfish models and textures are stored in a list array 
+that an artist could comfortably edit. As my game currently uses buttons, when a jellyfish button is selected, its corresponding 
+index is called from the list array, updating the static variable. Of course, a keyboard input or number-insert system could easily 
+be used in its place. 
 
 {{<rowgap>}}
 {{<image src="Jellyfish/portfolio_BeforeOptimise.png" height="350" caption="Code in a material widget before the restructure">}}
@@ -132,9 +180,19 @@ Previously, all sliders were copy pasted for every jellyfish model in the game (
 {{</rowgap>}}
 <br/><br/>
 
+This newer method allows the user to instantiate multiple, unique jellyfish with much fewer lines of code. 
+This improvement not only streamlined the implementation process but also significantly improved performance, allowing for 
+a cheap, intuitive method to populate an environment.
+
 # Environment
 
-For the environment, I created a PCG sand texture and a Post Processing volume to create an underwater atmosphere with a disappearing render distance. I also added a daytime/night-time switch and god rays. The god-rays were made using simple geometric shapes & a PCG material. I created different instances with out of sync sine values to create a seemingly random scattering-light effect. This cheap, visually effective method avoids using Unreal's 'expensive' environment light mixture effects. 
+In developing the environment for the jellyfish, I aimed to create a underwater atmosphere that would compliment the jellyfish models &
+ MMO scenario
+
+I created a PCG sand texture and a Post Processing volume (PPV) to create an underwater atmosphere with animated sand rays and a 
+disappearing render distance. I also added a daytime/night-time switch to better view emissive customisation options. 
+Finally, I created god rays; they were made using simple geometric shapes & a PCG material. I created different instances with out 
+of sync sine values to create a seemingly random scattering-light effect.
 
 {{<row>}}
 {{<image src="Jellyfish/gif_sliders.gif" height="315" caption="Gif of sliders being used">}}
@@ -142,11 +200,22 @@ For the environment, I created a PCG sand texture and a Post Processing volume t
 {{<image src="Jellyfish/gif_godrays.gif" height="315" caption="Gif of cheap godrays">}}
 {{</rowgap>}}
 
+The sand texture and PPV enhance the environment while cleverly masking the small loaded area, conserving disk
+ space. Meanwhile, the god rays provide a visually effective and cost-effective alternative to Unreal's more expensive
+  environment light mixture effects.
+
 <br/><br/>
 
-# Jalyfish Clone System
+# Jellyfish Clone System
 
-Once the artist, or player, has finished customising their jellyfish, they may let it swim in the background. To do this, I used an array and velocity script. The submitted jellyfish is cloned, with the clone containing a random velocity that changes direction if colliding with an invisible wall, to avoid jellyfish leaving the area. The clone is also added to an array list that deletes that oldest list item once 10 items have been added, to avoid overcrowding. This "particle" system creates a neat, easily customisable method to crowd an environment and for the player to admire their creation. 
+
+As mentioned, users can populate their environment with custom jellyfish. I included this feature to showcase how artists 
+could utilize my project to fill a space with NPCs or allow players to save their personalized jellyfish creations.
+
+To do this, I used an array and velocity script. The submitted jellyfish is cloned, with the clone containing a random velocity that 
+changes direction if colliding with an invisible wall, to avoid jellyfish leaving the area. The clone is also added to an 
+array list that deletes that oldest list item once 10 items have been added, to avoid overcrowding. This 
+creates an intuitive, easily editable set up for an artist to use or for a player, of any specs, to admire their creations. 
 
 {{<rowgap>}}
 {{<image src="Jellyfish/portfolio_equation.png" height="330" caption="Velocity calculated through the 'Euler Method' equation.">}}
@@ -159,5 +228,8 @@ Once the artist, or player, has finished customising their jellyfish, they may l
 
 # Conclusion
 
-This lengthy project began as a computing MA final project and has since been updated numerous times as my technical art & programming skills progress. <br/>
-After using Unreal Engine's colourblind testing feature and adding several of my own soundtracks, my jellyfish program was completed with 4 textures, 3 movements, 65 differing sliders and 4 differing buttons with a zipped file size smaller than 100MB.
+This extensive project began as my final project for a computing MA and has since undergone numerous updates as my technical 
+art and programming skills have evolved. After utilizing Unreal Engine's colorblind testing feature and adding several original 
+soundtracks, my jellyfish program was complete. With optimized movement equations, an API for jellyfish models and textures, 
+an enhanced environment, numerous stored materials & movements all within a zipped file size of 
+under 100MB, I take great pride in this project as it demonstrates essential skills in both programming and technical art.
