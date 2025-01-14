@@ -1,7 +1,7 @@
 ---
 title: Kellogg's - Packaging Design Project
 image: /img/kelloggs/final_all_noshadow.PNG
-weight: 5
+weight: 7
 tags:
   - Graphic Design
   - Motion Graphics
