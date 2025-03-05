@@ -79,10 +79,6 @@ As the only forces acting on the bullets are its velocity and gravity, I knew th
 
 As change in position(distance) is = Velocity x Time, I first needed to calculate velocity, which is Acceleration x time. As 'Step' is how much time between each point, this is the variable I would be using (which I made smaller to draw a higher resolution curve). As my only acceleration is gravity and my time between points is 'Step' I knew that I would need to add the following equations to my loop for every point index:
 
-
-
-
-
 {{<rowgap>}}
 {{<image src="fireboi/finalequation.png" height="130" caption="">}}
 {{</rowgap>}}
