@@ -1,6 +1,6 @@
 ---
 title: Procedural Jellyfish
-youtube: s03iVL0zItw
+image: /img/jellyfish/final_gif4.gif
 weight: 1
 tags:
   - Technical Art
@@ -16,6 +16,10 @@ links:
     - name: Gameplay video
       url: https://www.youtube.com/watch?v=s03iVL0zItw
 ---
+
+<br/><br/>
+
+<iframe width="600" height="338" src="https://www.youtube.com/embed/s03iVL0zItw" frameborder="0" allowfullscreen></iframe>
 
 # Procedural Content Generation - Jellyfish Customisation
 

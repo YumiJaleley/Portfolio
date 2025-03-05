@@ -17,15 +17,21 @@
 <header>
     {{ if .Parent }}
     <a class="back-button" href="{{ .Parent.RelPermalink }}">
+        <!--
         ←
         {{ if .Parent.IsHome }}
+         -->
         Home
+        <!--
         {{ else }}
         {{ .Parent.Title }}
         {{ end }}
+          -->
     </a>
     {{ end }}
     <h1><a href="/">{{ $.Site.Title }}</a></h1>
 </header>
+
+
 
 <main>
