@@ -81,7 +81,7 @@ As change in position(distance) is = Velocity x Time, I first needed to calculat
 
 
 
-<br/>
+
 
 {{<rowgap>}}
 {{<image src="fireboi/finalequation.png" height="130" caption="">}}
@@ -89,11 +89,14 @@ As change in position(distance) is = Velocity x Time, I first needed to calculat
 
 <br/><br/>
 
+### Final outcome of aiming mechanic:
+
 {{<rowgap>}}
 {{<image src="fireboi/textfinal.png" height="160" caption="All variables & definitions">}}
-{{<image src="fireboi/lf_graph.PNG" height="450" caption="Overall graph">}}
+{{<image src="fireboi/lf_graph.PNG" height="450" caption="Graph explaining final method & variables">}}
 {{</rowgap>}}
 
+For the script itself, I created a 'Draw path' function that contains a loop for each index that updates position & velocity. I also used a variable from my charge state script (explored further on) to make sure the line renderer is pointing in the same direction as the bullet firepoint. The final result is cheap, reusable and accurate. 
 
 <br/><br/>
 
