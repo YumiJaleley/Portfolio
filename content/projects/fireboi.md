@@ -1,6 +1,6 @@
 ---
 title: Fireboi Escapes The Lab - Unity C# Exploration
-youtube: Jt1GzJWj9wA
+image: /img/fireboi/gif_fireboi_2.gif
 weight: 2
 tags:
   - Technical Art
@@ -15,6 +15,10 @@ links:
     - name: Play the game
       url: https://yumi-jaleley.itch.io/fireboi-escapes-the-lab
 ---
+<br/><br/>
+
+<iframe width="600" height="338" src="https://www.youtube.com/embed/Jt1GzJWj9wA" frameborder="0" allowfullscreen></iframe>
+
 
 Fireboi Escapes the Lab features a fire alien that needs to escape a flooding lab, using his charged up fireballs to aid him in the process. This project was created for my university coding class, based on the prompt of “Every 10 Seconds”. It serves to demonstrate my skills in gameplay design and C# coding. 
 
