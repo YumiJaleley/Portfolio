@@ -1,6 +1,6 @@
 ---
 title: Procedural Jellyfish
-image: /img/jellyfish/finalgif7.gif
+image: /img/jellyfish/finalgif8.gif
 weight: 1
 tags:
   - Technical Art
