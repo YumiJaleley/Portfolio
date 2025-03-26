@@ -9,6 +9,7 @@ tags:
   - 3D/2D Art
   - Technical Art Mobile Games
   - Game Design
+  - Technical Animation
 
 summary: Detailed jellyfish customisation game, made using only procedural content generation to optimize performance in Unreal Engine 5.
 
