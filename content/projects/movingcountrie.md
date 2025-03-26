@@ -8,6 +8,7 @@ tags:
   - Technical Art Mobile Games
   - 3D/2D Art
   - Game Design
+  - Technical Animation
 
 summary: Multiple ending, silent narrative video game. Made using 2D animation in photoshop and C# code in Unity.
 
