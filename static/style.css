@@ -213,7 +213,7 @@ div#zoomed-in-display img, div#zoomed-in-display video {
     max-height: 80vh;
 }
 img.hidden, video.hidden {
-    visibility: hidden;
+    display: none;
 }
 div.captionedimage, div.captionedvideo {
     display: flex;
