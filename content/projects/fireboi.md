@@ -1,6 +1,6 @@
 ---
 title: Fireboi Escapes The Lab - Unity C# Exploration
-image: /img/fireboi/gif_fireboi_2.gif
+video: /static/img/fireboi/frontvid_fireboi.mp4
 weight: 2
 tags:
   - Technical Art
@@ -16,6 +16,7 @@ links:
     - name: Play the game
       url: https://yumi-jaleley.itch.io/fireboi-escapes-the-lab
 ---
+
 <br/><br/>
 
 <iframe width="600" height="338" src="https://www.youtube.com/embed/Jt1GzJWj9wA" frameborder="0" allowfullscreen></iframe>
