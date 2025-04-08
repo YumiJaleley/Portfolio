@@ -1,6 +1,6 @@
 ---
 title: Fireboi Escapes The Lab - Unity C# Exploration
-video: /static/img/fireboi/frontvid_fireboi.mp4
+video: /img/fireboi/frontvid_fireboi.webm
 weight: 2
 tags:
   - Technical Art
