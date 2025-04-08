@@ -179,17 +179,17 @@ div.tags div.tag {
     color: #111;
 }
 
-/* Image zooming */
-img.image {
+/* Image and video zooming */
+*.zoomable {
     cursor: zoom-in;
     transform: scale(100%);
     transition: transform var(--anim);
     max-height: 40em;
 }
-img.image:hover {
+*.zoomable:hover {
     transform: scale(105%);
 }
-div#zoomed-in-image {
+div#zoomed-in-display {
     position: fixed;
     left: 0;
     top: 0;
@@ -204,15 +204,18 @@ div#zoomed-in-image {
     opacity: 100%;
     transition: opacity var(--anim);
 }
-div#zoomed-in-image.hidden {
+div#zoomed-in-display.hidden {
     opacity: 0%;
     pointer-events: none;
 }
-div#zoomed-in-image img {
+div#zoomed-in-display img, div#zoomed-in-display video {
     max-width: 80vw;
     max-height: 80vh;
 }
-div.captionedimage{
+img.hidden, video.hidden {
+    visibility: hidden;
+}
+div.captionedimage, div.captionedvideo {
     display: flex;
     flex-direction: column;
     font-family: "Playfair Display", serif;

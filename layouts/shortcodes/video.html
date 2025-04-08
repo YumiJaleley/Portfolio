@@ -1,0 +1,7 @@
+<div class="captionedvideo">
+<span> {{ .Get "caption"}}: </span> 
+<video autoplay muted loop playsinline height='{{ .Get "height"}}'>
+    <source src="{{ . }}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+</div>

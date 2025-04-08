@@ -12,22 +12,38 @@
     <span class="copyright">Copyright &copy; {{ now.Year }} Sofia Sorace. All rights reserved</span>
 </footer>
 
-<div id="zoomed-in-image" class="hidden" onclick="unzoom()">
+<div id="zoomed-in-display" class="hidden" onclick="unzoom()">
     <img src="#" />
+    <video onclick="unzoom()" autoplay muted loop playsinline>
+        <source src="#" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </div>
 
 </body>
 
 <script>
-    const zoomedImageDiv = document.getElementById('zoomed-in-image')
-    const zoomedImage = zoomedImageDiv.getElementsByTagName('img')[0]
+    const zoomedDiv = document.getElementById('zoomed-in-display')
+    const zoomedImage = zoomedDiv.getElementsByTagName('img')[0]
+    const zoomedVideo = zoomedDiv.getElementsByTagName('video')[0]
+    const zoomedVideoSrc = zoomedVideo.getElementsByTagName('source')[0]
     function zoom(id) {
-        const image = document.getElementById(id)
-        zoomedImage.src = image.src
-        zoomedImageDiv.classList.remove('hidden')
+        if(id.startsWith('vid-')) {
+            zoomedImage.classList.add('hidden')
+            const videoSrc = document.getElementById(id)
+            zoomedVideoSrc.src = videoSrc.src
+            zoomedVideo.classList.remove('hidden')
+            zoomedVideo.load()
+        } else {
+            zoomedVideo.classList.add('hidden')
+            const image = document.getElementById(id)
+            zoomedImage.src = image.src
+            zoomedImage.classList.remove('hidden')
+        }
+        zoomedDiv.classList.remove('hidden')
     }
     function unzoom() {
-        zoomedImageDiv.classList.add('hidden')
+        zoomedDiv.classList.add('hidden')
     }
 </script>
 

@@ -11,6 +11,11 @@
         "Title" .Title
     )}}
     {{ end }}
+    {{ if .Params.video }}
+    {{ partial "video" (dict
+        "Destination" .Params.video
+    )}}
+    {{ end }}
     <div class="content">
         <p>
             {{ .Summary }}

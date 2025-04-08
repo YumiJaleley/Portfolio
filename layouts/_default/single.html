@@ -14,6 +14,13 @@
 )}}
 </div>
 {{ end }}
+{{ if .Params.video }}
+<div class="center">
+{{ partial "video" (dict
+    "Destination" .Params.video
+)}}
+</div>
+{{ end }}
 {{ .Content }}
 </section>
 {{ partial "footer.html" . }}
