@@ -1,5 +1,5 @@
 {{ $id := md5 .Destination }}
 <video class="zoomable" onclick="zoom('vid-{{ $id }}')" autoplay muted loop playsinline>
-    <source id="vid-{{ $id }}" src="{{ .Destination | safeURL }}" type="video/mp4">
+    <source id="vid-{{ $id }}" src="{{ .Destination | safeURL }}">
     Your browser does not support the video tag.
 </video>
