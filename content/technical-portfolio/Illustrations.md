@@ -1,8 +1,9 @@
 ---
 title: General Illustrations
 image: /img/illustrations/finalawd.png
+weight: 7
 tags:
-  - Character Art
+    - Character Concept Art
 links:
     - name: ArtStation
       url: https://www.artstation.com/artwork/Z5689m

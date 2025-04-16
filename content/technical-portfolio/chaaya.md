@@ -1,8 +1,9 @@
 ---
 title: Chaaya - Character Concept Design
 image: /img/gallery/chaaya_FINAL12.png
+weight: 1
 tags:
-  - Character Art
+   - Character Concept Art
 links:
     - name: ArtStation
       url: https://www.artstation.com/artwork/Z5689m
@@ -34,7 +35,6 @@ In order to fully inform her visual design, I began with world building; develop
 {{<image src="chaaya/character_dynamics.png" height="400" caption="Character Dynamics">}}
 {{<image src="chaaya/side_characters.png" height="250" caption="Supporting Cast">}}
 {{<image src="chaaya/face.png" height="250" caption="Chaaya's face concept">}}
-
 {{</rowgap>}}
 
 <br/><br/>
