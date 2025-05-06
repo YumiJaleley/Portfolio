@@ -5,7 +5,7 @@ weight: 1
 tags:
   - Technical Art
   - Programming
-  - UI Programming
+  - UI Design
   - 3D/2D Art
   - Technical Art Mobile Games
   - Game Design

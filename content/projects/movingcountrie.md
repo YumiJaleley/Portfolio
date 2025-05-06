@@ -6,6 +6,7 @@ tags:
   - UI Programming
   - Programming
   - Technical Art Mobile Games
+  - UI Design
   - 3D/2D Art
   - Game Design
   - Technical Animation

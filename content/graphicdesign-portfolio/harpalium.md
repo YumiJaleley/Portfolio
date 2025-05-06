@@ -5,6 +5,7 @@ weight: 6
 tags:
   - Graphic Design
   - Motion Graphics
+  - UI Design
 
 summary: This is a sample of graphic design/motion design pieces I made while interning at Harpalium Initiative.
 

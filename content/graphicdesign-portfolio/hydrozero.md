@@ -5,6 +5,8 @@ weight: 5
 tags:
   - Graphic Design
   - Motion Graphics
+  - Visual Identity Deisgn
+  - UI Design
 
 summary: HydroZero is a personal project that investigates innovative product and package design, using audience & competitor research, to create a fully sustainable skin care product with 3D models, dieline templates and more.
 
