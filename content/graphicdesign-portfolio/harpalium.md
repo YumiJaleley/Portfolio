@@ -1,5 +1,5 @@
 ---
-title: Harpalium Initiative - Internship
+title: Harpalium Initiative - Motion Graphics Internship
 youtube: b1n-cOYIC_c
 weight: 6
 tags:
