@@ -3,6 +3,7 @@ title: Fireboi Escapes The Lab - Unity C# Exploration
 video: /img/fireboi/frontvid_fireboi.webm
 weight: 2
 tags:
+  - VFX Artist
   - Technical Art
   - Programming
   - Technical Art Mobile Games

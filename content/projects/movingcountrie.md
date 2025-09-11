@@ -4,6 +4,7 @@ youtube: fYaEYadzhTg
 weight: 5
 tags:
   - UI Programming
+  - VFX Artist
   - Programming
   - Technical Art Mobile Games
   - UI Design

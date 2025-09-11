@@ -3,8 +3,9 @@ title: Procedural Jellyfish
 video: /img/Jellyfish/frontvid_jelly.webm
 weight: 1
 tags:
-  - Technical Art
+  - VFX Artist
   - Programming
+  - Technical Art
   - UI Design
   - 3D/2D Art
   - Technical Art Mobile Games

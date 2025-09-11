@@ -3,6 +3,7 @@ title: Zia - 3D Character Animation
 youtube: lJHgmDBUM6M
 weight: 3
 tags:
+    - VFX Artist
     - Technical Art
     - 3D/2D Art
     - 3D Modelling
