@@ -4,6 +4,7 @@ image: /img/character-ill/random_4.png
 weight: 6
 tags:
   - Character Concept Art
+  - 3D/2D Art
 links:
     - name: ArtStation
       url: https://www.artstation.com/artwork/Z5689m
