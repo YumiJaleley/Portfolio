@@ -5,6 +5,7 @@ weight: 8
 tags:
   - Graphic Design
   - Motion Graphics
+  - Concept Art
 
 summary: These are miscellaneous graphic/motion graphic designs that were commissioned.
 
@@ -19,6 +20,22 @@ These are miscellaneous graphic/motion graphic designs that were commissioned.
 - Motion Graphics.
 - Use of Adobe Illustrator, Photoshop & After Effects.
 
+<br/><br/>
+
+# Studio Wife
+
+The following illustrations and pieces of concept art were created for unreleased game "We are All Stars in the Galaxy" by indie game studi 'Studio Wife'. The pieces of character concept art were created from personality and style descriptions. While the poster illustration and logo were improved from previous works. Due to the tight crunch and my ability to work fast, all individual pieces were created in no more than a day.
+
+{{<rowgap>}}
+{{<image src="misc/starsconceptart.png" height="390" caption="Shiki and Maki concept art">}}
+{{<image src="misc/outfits_2.png" height="390" caption="Shiki and Maki outfit concept art">}}
+{{<image src="misc/miki.png" height="390" caption="Maki final portrait">}}
+{{<image src="misc/shiki.png" height="390" caption="Shiki final portrait">}}
+{{<image src="misc/starlogo.png" height="390" caption="Game logo">}}
+{{<image src="misc/stageillustration.png" height="500" caption="Poster Illustration">}}
+{{</rowgap>}}
+
+<br/><br/>
 <br/><br/>
 
 # Social Media Gif

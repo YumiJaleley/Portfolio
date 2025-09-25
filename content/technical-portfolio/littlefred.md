@@ -3,11 +3,13 @@ title: Little Fred - 3D Animation & Visual Design
 youtube: AA0VN84vcVY
 weight: 7
 tags:
+  - Concept Art
   - Graphic Design
   - Motion Graphics
   - Game Design
   - 3D/2D Art
   - Technical Animation
+
 
 summary: Little Fred is a Blender animation demonstrating a Demo for a silent narrative game, using shape language, colour theory and sound design to present charming character personalities and environments.
 

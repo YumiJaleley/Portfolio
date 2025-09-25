@@ -5,6 +5,7 @@ weight: 6
 tags:
   - Character Concept Art
   - 3D/2D Art
+  - Concept Art
 links:
     - name: ArtStation
       url: https://www.artstation.com/artwork/Z5689m
