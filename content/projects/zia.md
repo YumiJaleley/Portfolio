@@ -8,6 +8,7 @@ tags:
     - 3D/2D Art
     - 3D Modelling
     - Character Concept Art
+    - Character Art
     - Concept Art
     - Technical Animation
 
