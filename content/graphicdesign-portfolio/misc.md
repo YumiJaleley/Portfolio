@@ -6,6 +6,7 @@ tags:
   - Graphic Design
   - Motion Graphics
   - Concept Art
+  - UI/UX Design
 
 summary: These are miscellaneous graphic/motion graphic designs that were commissioned.
 

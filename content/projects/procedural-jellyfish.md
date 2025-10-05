@@ -6,7 +6,7 @@ tags:
   - VFX Artist
   - Programming
   - Technical Art
-  - UI Design
+  - UI/UX Design
   - 3D/2D Art
   - Technical Art Mobile Games
   - Game Design
