@@ -10,7 +10,6 @@ tags:
   - UI Design
   - Game Design
   - Technical Animation
-  - UI/UX Design
 
 summary: Multiple ending, silent narrative video game. Made using 2D animation in photoshop and C# code in Unity.
 

@@ -5,6 +5,7 @@ weight: 4
 tags:
   - Technical Art Mobile Games
   - Game Design
+  - UI/UX Design
 
 summary: This spy simulation mobile game is built to maximise monetisation and longevity through microtransactions and captivating gameplay.
 
