@@ -5,6 +5,7 @@ weight: 1
 tags:
    - Character Concept Art
    - 3D/2D Art
+   - 2D Art
    - Concept Art
    - Character Art
 links:
