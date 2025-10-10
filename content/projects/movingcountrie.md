@@ -8,9 +8,9 @@ tags:
   - Programming
   - Technical Art Mobile Games
   - UI Design
-  - Game Design
   - Technical Animation
   - 2D Art
+  - 3D Artist / Animator generalist
 
 summary: Multiple ending, silent narrative video game. Made using 2D animation in photoshop and C# code in Unity.
 
