@@ -11,8 +11,8 @@ tags:
   - Technical Art Mobile Games
   - Technical Animation
   - Character Art
-  - 3D Artist / Animator generalist
-
+  - 3D Artist / Animator
+  
 summary: Detailed jellyfish customisation game, made using only procedural content generation to optimize performance in Unreal Engine 5.
 
 links:

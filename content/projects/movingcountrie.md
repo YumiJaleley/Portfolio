@@ -10,7 +10,7 @@ tags:
   - UI Design
   - Technical Animation
   - 2D Art
-  - 3D Artist / Animator generalist
+  - 3D Artist / Animator
 
 summary: Multiple ending, silent narrative video game. Made using 2D animation in photoshop and C# code in Unity.
 

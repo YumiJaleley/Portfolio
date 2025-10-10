@@ -9,7 +9,7 @@ tags:
   - Technical Art Mobile Games
   - Technical Animation
   - UI/UX Design
-  - 3D Artist / Animator generalist
+  - 3D Artist / Animator 
 
 summary: Using efficient, cheap and complex C# tools, "Fire Boi Escapes the Lab" is a timed, parkour/puzzle game based on the "Every 10 Seconds" theme.
 
