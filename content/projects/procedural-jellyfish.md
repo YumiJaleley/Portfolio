@@ -31,10 +31,11 @@ In gaming, 3D character and creature models often focus on familiar archetypes l
 The initial aim of this project was to create a jellyfish customization game using UI sliders for real-time adjustments. As development progressed, the project evolved to include multiple updates that enhance technical efficiency, such as an API for streamlined asset management and an array of jellyfish clones to populate the environment. These features not only optimize performance but also enable a rich variety of jellyfish while minimizing file size and resource usage, showcasing the powerful capabilities of PCG in game development.
 
 ### Skills Gained:
-- PCG texture creation.
-- Usage of math to generate vertex displacement animation.
+- Procedural generation for textures & animations.
+- Vertex displacement animation.
+- Math-based programming
 - UI sliders & widgets in UE5
-- Use of Application Programming Interface (API).
+- Data-driven-based design using arrays.
 - Performance optimization.
 - Environment & lighting design.
 - 3D creature design.
