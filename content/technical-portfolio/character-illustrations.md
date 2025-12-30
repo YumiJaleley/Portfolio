@@ -1,7 +1,7 @@
 ---
 title: Character Concept Illustrations
 image: /img/character-ill/random_4.png
-weight: 5
+weight: 6
 tags:
   - Character Concept Art
   - 3D/2D Art
