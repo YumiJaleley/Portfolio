@@ -1,7 +1,7 @@
 ---
 title: Chaaya - Character Concept Design
 image: /img/gallery/chaaya_FINAL12.png
-weight: 1
+weight: 5
 tags:
    - Character Concept Art
    - 3D/2D Art

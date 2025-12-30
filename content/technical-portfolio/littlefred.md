@@ -1,7 +1,7 @@
 ---
 title: Little Fred - 3D Animation & Visual Design
 youtube: AA0VN84vcVY
-weight: 7
+weight: 4
 tags:
   - Concept Art
   - Graphic Design
