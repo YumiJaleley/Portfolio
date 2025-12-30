@@ -8,6 +8,7 @@ tags:
    - 2D Art
    - Concept Art
    - Character Art
+   - MCU ETC Application
 links:
     - name: ArtStation
       url: https://www.artstation.com/artwork/Z5689m

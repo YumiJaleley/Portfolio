@@ -11,6 +11,7 @@ tags:
   - Technical Animation
   - 2D Art
   - 3D Artist / Animator
+  - MCU ETC Application
 
 summary: Multiple ending, silent narrative video game. Made using 2D animation in photoshop and C# code in Unity.
 

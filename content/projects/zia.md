@@ -12,6 +12,7 @@ tags:
     - Concept Art
     - Technical Animation
     - 3D Artist / Animator
+    - MCU ETC Application
 
 summary: Using advanced IK to FK rigging tools with Python shortcuts, Zia is an NPC character made using Maya, Substance 3D painter and Unreal Engine 4. 
 
