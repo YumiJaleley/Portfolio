@@ -10,7 +10,7 @@ tags:
   - 3D/2D Art
   - Technical Animation
   - 3D Artist / Animator
-  - MCU ETC Application
+  - CMU ETC Application
 
 
 summary: Little Fred is a Blender animation demonstrating a Demo for a silent narrative game, using shape language, colour theory and sound design to present charming character personalities and environments.

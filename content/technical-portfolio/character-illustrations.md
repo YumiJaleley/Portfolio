@@ -1,14 +1,14 @@
 ---
 title: Character Concept Illustrations
 image: /img/character-ill/random_4.png
-weight: 6
+weight: 5
 tags:
   - Character Concept Art
   - 3D/2D Art
   - Concept Art
   - Character Art
   - 2D Art
-  - MCU ETC Application
+  - CMU ETC Application
 links:
     - name: ArtStation
       url: https://www.artstation.com/artwork/Z5689m
